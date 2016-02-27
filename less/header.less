@@ -1,10 +1,20 @@
 .ss-header {
-	background-image: url('@{image-path}photo-header-hi.jpg');
+	background-image: url('@{image-path}photo-header-full.jpg');
 	background-position: center center;
 	background-size: cover;
+	max-height: 700px;
 	position: relative;
 	
+	@media all and (max-width:@break-desktop) {
+		background-image: url('@{image-path}photo-header-desktop.jpg');
+	}
+	
+	@media all and (max-width:@break-tablet) {
+		background-image: url('@{image-path}photo-header-tablet.jpg');
+	}
+	
 	@media all and (max-width:@break-mobile) {
+		background-image: url('@{image-path}photo-header-mobile.jpg');
 	}
 
 	&:before {
