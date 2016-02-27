@@ -1,0 +1,50 @@
+.ss-header__title {
+	background-image: -webkit-linear-gradient(transparent, transparent),url('@{image-path}texture-tan.jpg');
+	background-image: -o-linear-gradient(transparent, transparent);
+	font-family: @font-playfair;
+	font-size: 4.5rem;
+	line-height: 4.5rem;
+	margin: 40px 0 0;
+	text-align: center;
+	transition: @default-transition;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	
+	@media all and (max-width:@break-desktop) {
+		font-size: 3.5rem;
+		line-height: 3.5rem;
+		margin: 30px 0 0;
+	}
+	
+	@media all and (max-width:@break-tablet) {
+		font-size: 2.75rem;
+		line-height: 2.75rem;
+		margin: 15px 0 0;
+	}
+	
+	@media all and (max-width:@break-mobile) {
+		font-size: 2.25rem;
+		line-height: 2.25rem;
+		margin: 10px 0 0 0;
+	}
+}
+
+.ss-overlay-type {
+	color: #fff;
+	font-family: @font-source-serif;
+	font-size: .9375rem;
+	line-height: .9375rem;
+	opacity: .45;
+	text-shadow: 1px 1px #000;
+	width: auto;
+	
+	@media all and (max-width:@break-tablet) {
+		font-size: .875rem;
+		line-height: .875rem;
+	}
+	
+	@media all and (max-width:@break-mobile) {
+		font-size: .75rem;
+		line-height: .75rem;
+	}
+}
