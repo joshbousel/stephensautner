@@ -1,0 +1,53 @@
+.ss-about {
+	@media all and (max-width:@break-tablet) {
+		padding: 60px 7.0833% 40px;
+	}
+}
+
+.ss-about__content {
+	width: 42.5%;
+	
+	@media all and (max-width:@break-tablet) {
+		width: 100%;
+	}
+}
+
+.ss-about__content__text {
+	color: @dark-brown;
+	font-family: @font-source-serif;
+	font-size: 1rem;
+	line-height: 1.9rem;
+}
+
+.ss-about__image {
+	background-image: url('@{image-path}photo-about.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+	left: 50%;
+	position: absolute;
+	top: 0;
+	width: 50%;
+	
+	@media all and (max-width:@break-tablet) {
+		left: -8.5%;
+		margin: 0;
+		position: relative;
+		top: 40px;
+		width: calc(~'100% + 17%');
+		
+		&:before {
+		  display: block;
+		  content: "";
+		  width: 100%;
+		  padding-top: 80%;
+		}
+	}
+	
+	&__caption {
+		bottom: 5px;
+		position: absolute;
+		right: 10px;
+	}
+}

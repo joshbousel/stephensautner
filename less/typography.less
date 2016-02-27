@@ -3,6 +3,17 @@
 	font-family: @font-playfair;
 	transition: @default-transition;
 	
+	&--is-about {
+		font-size: 2.1875rem;
+		line-height:2.1875rem;
+		margin: 0 0 30px;
+		
+		@media all and (max-width:@break-tablet) {
+			margin: 0 0 15px;
+			text-align: center;
+		}
+	}
+	
 	&--is-feature {
 		font-size: 3.125rem;
 		line-height: 3.125rem;
