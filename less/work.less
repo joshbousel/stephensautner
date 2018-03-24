@@ -10,6 +10,16 @@
 	font-family: @font-playfair;
 	font-size: 1.25rem;
 	line-height: 1.25rem;
+	margin: 10px 0 0;
+	
+	&-title {
+		color: #fff;
+		display: block;
+		font-family: @font-source-serif;
+		font-size: .85rem;
+		line-height: .85rem;
+		margin: 8px 0 0 16px;
+	}
 }
 
 .ss-work__container {
@@ -18,11 +28,11 @@
 	
 	&--is-left {
 		margin: 0 5.3% 0 0;
-		width: 28.85%;
+		width: 30%;
 	}
 	
 	&--is-right {
-		width: 65%;
+		width: 25%;
 	}
 	
 	@media all and (max-width:@break-tablet) {
@@ -39,9 +49,8 @@
 	width: 100%;
 	
 	.ss-work__image {
-		margin: 0 4.8% 0 0;
-		padding: 2.7%;
-		width: 36%;
+		margin: 0 0 10px 0;
+		padding: 6.5%;
 		vertical-align: top;
 		
 		@media all and (max-width:@break-tablet) {
@@ -53,12 +62,7 @@
 	}
 	
 	.ss-work__content {
-		display: inline-block;
-		width: 52%;
-		
-		@media all and (max-width:@break-tablet) {
-			width: 100%;
-		}
+		display: block;
 	}
 }
 
@@ -85,7 +89,7 @@
 
 .ss-work__text {
 	color: #fff;
-	display: inline-block;
+	display: block;
 	font-family: @font-source-serif;
 	font-size: 1.125rem;
 	line-height: 1.6875rem;
